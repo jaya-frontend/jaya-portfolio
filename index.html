@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaya Kumari | Front-End Developer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e293b;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #38bdf8;
+}
+
+.home p {
+    font-size: 19px;
+    color: #cbd5e1;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    color: #38bdf8;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    background: #1e293b;
+    padding: 15px 25px;
+    border-radius: 7px;
+    color: #38bdf8;
+}
+
+.card a {
+    color: #38bdf8;
+}
+
+#contact a {
+    color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Jaya Kumari</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <h1>Hello, I'm <span>Jaya Kumari</span></h1>
+    <p>Aspiring Front-End Developer</p>
+    <p>I create responsive and user-friendly websites using HTML, CSS and JavaScript.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am an aspiring Front-End Developer passionate about
+            creating modern, responsive and user-friendly websites.
+            I have learned HTML, CSS and JavaScript and completed
+            projects through freeCodeCamp.
+            I am eager to learn new technologies and grow as a developer.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>BA English Honours</h3>
+    </div>
+    <div class="card">
+        <h3>ADCA</h3>
+        <p>Percentage: 80.5%</p>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2>My Certifications</h2>
+    <div class="card">
+        <p>Responsive Web Design Developer Certification - freeCodeCamp</p>
+    </div>
+    <div class="card">
+        <p>Legacy Responsive Web Design V8 - freeCodeCamp</p>
+    </div>
+    <div class="card">
+        <p>JavaScript Developer Certification - freeCodeCamp</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="card">
+        <h3>Survey Form</h3>
+        <p>A responsive survey form built using HTML and CSS.</p>
+        <a href="https://jaya-frontend.github.io/survey--form/"
+        target="_blank">View Live Project</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Email: <a href="mailto:vandna04102001@gmail.com">
+        vandna04102001@gmail.com</a></p>
+
+        <p>GitHub:
+        <a href="https://github.com/jaya-frontend" target="_blank">
+        Visit My GitHub</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Jaya Kumari | Front-End Developer</p>
+</footer>
+
+</body>
+</html>
