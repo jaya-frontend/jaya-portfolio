@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jaya Kumari | Front-End Developer</title>
-
-<style>
+<title>Jaya Kumari | Front-End Developer</title><style>
 * {
     margin: 0;
     padding: 0;
@@ -161,6 +157,73 @@ h2 {
     text-decoration: underline;
 }
 
+#projects {
+    padding: 60px 8%;
+    background: #f5f7fb;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #172b50;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #172b50;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.project-card span {
+    display: block;
+    color: #087e75;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-buttons a {
+    background: #172b50;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.project-buttons a:hover {
+    background: #087e75;
+}
+
 footer {
     background: #1e293b;
     text-align: center;
@@ -187,79 +250,8 @@ footer {
         padding: 55px 6%;
     }
 }
-#projects {
-  padding: 60px 8%;
-  background: #f5f7fb;
-  text-align: center;
-}
-
-#projects h2 {
-  font-size: 32px;
-  margin-bottom: 35px;
-}
-
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.project-card {
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-}
-
-.project-card h3 {
-  color: #172b50;
-  margin-bottom: 12px;
-}
-
-.project-card p {
-  margin-bottom: 15px;
-  color: #555;
-}
-
-.project-card span {
-  display: block;
-  color: #087e75;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.project-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.project-buttons a {
-  background: #172b50;
-  color: white;
-  padding: 10px 14px;
-  border-radius: 7px;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.project-buttons a:hover {
-  background: #087e75;
-}
-</style>
-</head>
-
-<body>
-
-<header>
+</style></head><body><header>
     <div class="logo">Jaya Kumari</div>
-
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -269,52 +261,35 @@ footer {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-</header>
-
-<section class="home" id="home">
-
+</header><section class="home" id="home">
     <h3>Hello, Welcome to My Portfolio</h3>
-
     <h1>I'm <span>Jaya Kumari</span></h1>
-
     <p>
         Aspiring Front-End Developer passionate about
         creating responsive, modern and user-friendly websites
         using HTML, CSS and JavaScript.
     </p>
-
     <div class="buttons">
         <a href="#projects" class="btn">View My Projects</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a>
     </div>
-
-</section>
-
-<section id="about">
-
+</section><section id="about">
     <h2>About Me</h2>
-
     <div class="card">
         <p>
             I am an aspiring Front-End Developer with a strong
             interest in web development and designing user-friendly
-            websites.
+            websites.        I have learned HTML, CSS and JavaScript and completed
+        practical projects through freeCodeCamp.
 
-            I have learned HTML, CSS and JavaScript and completed
-            practical projects through freeCodeCamp.
+        I enjoy learning new technologies and improving
+        my development skills. I am looking for an opportunity
+        to start my career as a Front-End Developer.
+    </p>
+</div>
 
-            I enjoy learning new technologies and improving
-            my development skills. I am looking for an opportunity
-            to start my career as a Front-End Developer.
-        </p>
-    </div>
-
-</section>
-
-<section id="skills">
-
+</section><section id="skills">
     <h2>My Skills</h2>
-
     <div class="skills">
         <div class="skill">HTML5</div>
         <div class="skill">CSS3</div>
@@ -323,141 +298,145 @@ footer {
         <div class="skill">GitHub</div>
         <div class="skill">Web Development</div>
     </div>
-
-</section>
-<section id="projects">
-  <h2>My Projects</h2>
-
-  <div class="project-container">
-
-    <div class="project-card">
-      <h3>Survey Form</h3>
-      <p>A responsive survey form built using HTML and CSS.</p>
-      <span>HTML | CSS</span>
-      <div class="project-buttons">
-        <a href="https://jaya-frontend.github.io/survey--form/"
-           target="_blank">Live Demo</a>
-        <a href="https://github.com/jaya-frontend/survey--form"
-           target="_blank">View Code</a>
-      </div>
+</section><section id="projects">
+<h2>My Projects</h2>
+<div class="project-container"><div class="project-card">
+    <h3>Survey Form</h3>
+    <p>A responsive survey form built using HTML and CSS.</p>
+    <span>HTML | CSS</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/survey--form/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/survey--form" target="_blank" rel="noopener noreferrer">View Code</a>
     </div>
+</div>
 
-    <div class="project-card">
-      <h3>Tribute Page</h3>
-      <p>A tribute website dedicated to Dr. APJ Abdul Kalam.</p>
-      <span>HTML | CSS</span>
-      <div class="project-buttons">
-        <a href="https://jaya-frontend.github.io/tribute-page/"
-           target="_blank">Live Demo</a>
-        <a href="https://github.com/jaya-frontend/tribute-page"
-           target="_blank">View Code</a>
-      </div>
+<div class="project-card">
+    <h3>Tribute Page</h3>
+    <p>A tribute website dedicated to Dr. APJ Abdul Kalam.</p>
+    <span>HTML | CSS</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/tribute-page/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/tribute-page" target="_blank" rel="noopener noreferrer">View Code</a>
     </div>
+</div>
 
-    <div class="project-card">
-      <h3>Technical Documentation</h3>
-      <p>A JavaScript documentation website with code examples.</p>
-      <span>HTML | CSS</span>
-      <div class="project-buttons">
-        <a href="https://jaya-frontend.github.io/documentation/"
-           target="_blank">Live Demo</a>
-        <a href="https://github.com/jaya-frontend/documentation"
-           target="_blank">View Code</a>
-      </div>
+<div class="project-card">
+    <h3>Technical Documentation</h3>
+    <p>A JavaScript documentation website with code examples.</p>
+    <span>HTML | CSS</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/documentation/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/documentation" target="_blank" rel="noopener noreferrer">View Code</a>
     </div>
+</div>
 
-    <div class="project-card">
-      <h3>Product Landing Page</h3>
-      <p>A premium headphones product landing page.</p>
-      <span>HTML | CSS</span>
-      <div class="project-buttons">
-        <a href="https://jaya-frontend.github.io/product-landing-page/"
-           target="_blank">Live Demo</a>
-        <a href="https://github.com/jaya-frontend/product-landing-page"
-           target="_blank">View Code</a>
-      </div>
+<div class="project-card">
+    <h3>Product Landing Page</h3>
+    <p>A premium headphones product landing page.</p>
+    <span>HTML | CSS</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/product-landing-page/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/product-landing-page" target="_blank" rel="noopener noreferrer">View Code</a>
     </div>
+</div>
 
-  </div>
-</section>
-<section id="education">
+<div class="project-card">
+    <h3>Voting System</h3>
+    <p>A voting application using JavaScript Map and Set.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/voting-system/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/voting-system" target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+</div>
 
+<div class="project-card">
+    <h3>Bank Account Management</h3>
+    <p>A bank account program with deposit, withdrawal and transaction history features.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/bank-account-management/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/bank-account-management" target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+</div>
+
+<div class="project-card">
+    <h3>Markdown to HTML Converter</h3>
+    <p>A tool to convert Markdown text into HTML using JavaScript.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/markdown-to-html-converter/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/markdown-to-html-converter" target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+</div>
+
+<div class="project-card">
+    <h3>Drum Machine</h3>
+    <p>An interactive drum machine built using JavaScript.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/drum-machine/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/drum-machine" target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+</div>
+
+<div class="project-card">
+    <h3>Weather App</h3>
+    <p>A weather application built using JavaScript and a Weather API.</p>
+    <span>HTML | CSS | JavaScript</span>
+    <div class="project-buttons">
+        <a href="https://jaya-frontend.github.io/weather-app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/jaya-frontend/weather-app" target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+</div>
+
+</div>
+</section><section id="education">
     <h2>Education</h2>
-
     <div class="card">
         <h3>BA English Honours</h3>
     </div>
-
     <div class="card">
         <h3>ADCA</h3>
         <p>Percentage: 80.5%</p>
     </div>
+</section><section id="certificates">
+    <h2>My Certifications</h2><div class="card">
+    <h3>Responsive Web Design</h3>
+    <p>freeCodeCamp Developer Certification</p>
+    <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/responsive-web-design-v9" target="_blank" rel="noopener noreferrer">Verify Certificate</a>
+</div>
 
-</section>
+<div class="card">
+    <h3>Legacy Responsive Web Design V8</h3>
+    <p>freeCodeCamp Developer Certification</p>
+    <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/responsive-web-design" target="_blank" rel="noopener noreferrer">Verify Certificate</a>
+</div>
 
-<section id="certificates">
+<div class="card">
+    <h3>JavaScript Developer</h3>
+    <p>freeCodeCamp Developer Certification</p>
+    <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/javascript-v9" target="_blank" rel="noopener noreferrer">Verify Certificate</a>
+</div>
 
-    <h2>My Certifications</h2>
-
-    <div class="card">
-        <h3>Responsive Web Design</h3>
-        <p>freeCodeCamp Developer Certification</p>
-        <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/responsive-web-design-v9" target="_blank">
-            Verify Certificate
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>Legacy Responsive Web Design V8</h3>
-        <p>freeCodeCamp Developer Certification</p>
-        <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/responsive-web-design" target="_blank">
-            Verify Certificate
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>JavaScript Developer</h3>
-        <p>freeCodeCamp Developer Certification</p>
-        <a href="https://www.freecodecamp.org/certification/fcc-807aca3e-9a36-4fa2-be63-25332fe92f47/javascript-v9" target="_blank">
-            Verify Certificate
-        </a>
-    </div>
-
-<section id="contact">
-
+</section><section id="contact">
     <h2>Contact Me</h2>
-
     <div class="card">
-
         <p>
             Email:
-            <a href="mailto:vandna04102001@gmail.com">
-    vandna04102001@gmail.com
-</a>
+            <a href="mailto:vandna04102001@gmail.com">vandna04102001@gmail.com</a>
         </p>
-
         <p>
             GitHub:
-            <a href="https://github.com/jaya-frontend" target="_blank">
-    Visit My GitHub Profile
-</a>
+            <a href="https://github.com/jaya-frontend" target="_blank" rel="noopener noreferrer">Visit My GitHub Profile</a>
         </p>
         <p>
-          linkedin:
-        <a href="https://www.linkedin.com/in/jaya-kumari-04446544b/"
-   target="_blank"
-   rel="noopener noreferrer">
-   Visit My LinkedIn Profile
-</a>
-</p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/jaya-kumari-04446544b/" target="_blank" rel="noopener noreferrer">Visit My LinkedIn Profile</a>
+        </p>
     </div>
-
-</section>
-
-<footer>
+</section><footer>
     <p>© 2026 Jaya Kumari | Front-End Developer</p>
     <p>Designed and Built with HTML, CSS and JavaScript</p>
-</footer>
-
-</body>
+</footer></body>
 </html>
